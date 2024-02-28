@@ -65,3 +65,5 @@ jobs:
           name: dist-files
       - name: Print files in directory
         run: ls
+      - name: Print build outputs
+        run: echo "${{ needs.Build.outputs.script-file }}"
